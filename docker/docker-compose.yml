@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  application:
+    image: eltonplima/unicef:demo
+    ports:
+      - "8080:8000"
+    depends_on:
+      - database
+
+  database:
+    image: eltonplima/unicef:database
+
